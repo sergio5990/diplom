@@ -1,0 +1,174 @@
+c BGKG-11_water razr 7.9%(Cs137) source=water 
+c detector cells  
+70 2 -0.0012 141 -71 -152  imp:p=1 imp:e=1 fill=1 trcl=1
+c 70 2 -0.0012 (70 -145 -72):(145 -71 -155)  imp:p=1 imp:e=1 fill=1 
+71 2 -0.0012 #100 #120 #121 #122 #123 #124 #125 u=1 imp:p=1 imp:e=1 
+100 2 -0.0012 100 -128 -111 u=1 imp:p=1 imp:e=1 fill=6 $ 
+101 2 -0.0012  #102 #103 #104 #105 #106 #107 & 
+               #108 #109 #110 #111 #112 u=6  imp:p=1 imp:e=1 
+102 4 -2.78 (130 -132 -101):(101 -132 116 -110):(110 -132 -131) &
+        u=6  imp:p=1 imp:e=1 $ Al outer layer
+103 3 -0.8 101 -102 117 -116 imp:p=1 imp:e=1 u=6 $ rubber 
+104 2 -0.0012 101 -102 -117 imp:p=1 imp:e=1 u=6 $ air in front
+105 2 -0.0012 102 -118 115 -116 imp:p=1 imp:e=1 u=6 $ air in side
+106 4 -2.78 (102 -103 -115):(103 -105 113 -115) u=6 imp:p=1 imp:e=1 $ det Al layer
+107 5 -1.6 (103 -104 -113):(104 -105 112 -113) imp:p=1 imp:e=1 u=6 $ Mg0
+108 8 -8.6 (118 -109 115 -116):(109 -110 -116) imp:p=1 imp:e=1 u=6 $ permalloy
+109 6 -3.667 104 -105 -112 imp:p=1 imp:e=1 u=6 $ NaI
+110 7 -2.4 105 -106 -115 imp:p=1 imp:e=1 u=6 $ det_glass
+111 7 -2.4 (106 -107 -115):(107 -108 114 -115):(108 -109 -115) &
+            imp:p=1 imp:e=1 u=6 $ PMT_glass
+112 2 -0.0012 107 -108 -114 imp:p=1 imp:e=1 u=6 $ air inside PMT 
+c shell
+120 2 -0.0012 (100 -147 128 -151):(147 -111 129 -156) u=1 imp:p=1 imp:e=1 $ air side
+123 2 -0.0012 -164 -100 -135 u=1 imp:p=1 imp:e=1       $ air center
+124 2 -0.0012 (100 -137 136 -151) u=1 imp:p=1 imp:e=1 $ air side bottom
+125 11 -0.3 (137 -100 135 -163 -164) u=1 imp:p=1 imp:e=1 $ resin poristaya
+c
+121 9 -7.86 (100 -147 151 -155):(147 -111 156 -155):&
+    (111 -146 -155) u=1 imp:p=1 imp:e=1                              $ 2.65 AMG-5 shell side Fe 7.86
+122 9 -7.86 (-162 164 -163):(163 -161 -100 -162) u=1 imp:p=1 imp:e=1                        $ 2.65 AMG-5 shell bottom Fe 7.86
+c
+c 97 22 -1.0  -76 #70 imp:p=1 imp:e=0  $ water 22 -1.0  for det in water only
+97 22 -1.0  2 -162 -3 #70 imp:p=1 imp:e=0  $ water layer over sludge
+96 20 -1.3  1 -2 -3  imp:p=1 imp:e=0  $  sludge
+99 0 77  imp:p=0 imp:e=0 $ vac out
+98 2 -0.0012 -77 #96 #97 #70 imp:p=1 imp:e=1 $ vac in
+c 
+     
+c detector surfaces  
+c det box surfaces 
+70 pz 0 $ 
+71 pz 40.0 $ 
+c
+100 pz 1.55                                  $ 1.101 z141+1.55
+101 pz 1.7  $ z100+0.15 cmAl
+102 pz 2.0 $ z101+0.3
+103 pz 2.15 $ z102+0.15
+104 pz 2.65 $ z103+0.5
+105 pz 8.95 $ z104+Hcrystall(63)
+106 pz 9.25 $ z105+0.3 orgglass
+107 pz 9.45 $ z106+0.2 PMT glass
+ 108 pz 39.42 $ z109-0.2
+ 109 pz 39.62 $ z110-0.02 
+ 110 pz 39.64  $ z111-0.16 
+ 111 pz 39.8 $ z71-0.2 BGKG length
+112 cz 3.15 $ R_det
+113 cz 3.45 $ R_MgO=R_det+3mmMg0
+114 cz 3.395 $ R_in_PMT_glass
+115 cz 3.595 $ R_det_korpus=R_MgO+1.45mmAl
+116 cz 3.615 $ R_out_permalloy=R115+0.2mmPermalloy
+117 cz 2.0 $ R_in_rezina
+118 pz 5.35 $ begin of permalloy
+128 cz 3.775 $ R_out
+129 cz 3.775 $ R_out
+130 pz 1.0999
+131 pz 39.9601 $ 22.3601
+132 cz 3.7751 $ R128+eps
+135 cz 0.6 $ air hole in bottom
+136 cz 2.0 $  2-nd air hole in bottom
+137 pz 0.75
+c soil-korpus
+140 pz 0.15                                  $  z141+0.15(0.18)
+141 pz 0.00001                               $  zero level of device
+241 pz 0.0                                   $  z141-eps
+c 142 pz 0 $ -2.1  zero level of soil
+146 pz 40.00001 $ z71+eps
+147 pz 10.5 $  y141+10.5
+151 cz 4.30 $ R152-0.15 
+152 cz 4.45 $  outer radius of AMZ-shell  
+155 cz 4.44999 $ 4.54999 $ 4.5 $ R152-eps
+156 cz 4.25 $ $ R152-0.2 
+c 2 shere dl9 torca korpusa
+c vnehnie
+161 sz 1.55 4.45 $ malii radiys krivizni 
+162 sz 7.3 7.3 $ bolshii radiys krivizni
+c vnytrennie
+163 sz 1.55 4.30 $ malii radiys krivizni
+164 sz 7.3 7.135 $ bolshii radiys krivizni 
+c sludge
+1 pz -1100 $ lower plane of sludge 
+2 pz -1000 $ upper plane of sludge 
+3 cz 1500 $ radius of sludge (water)
+c vacuum sphere
+76 sz 5.35 50.0 $ water sphere in det center is changed each time
+77 so 3000.0
+  
+c source specification
+c detector translation and orientation
+*tr1 0 -5.35 -995.5  0 90 90 90 90 180 90 0 90
+MODE P E 
+c point source
+c sdef  erg d1 sur=77 nrm=-1 $ vacuum source
+c sdef  erg d1 cel=97 par=2 pos 0 0 5.35  rad d3 $ pos in center of NaI
+ sdef  erg d1 par=2 pos 0 0 -1000 axs 0 0 1 ext d2 rad d3 $ det na boku in sludge WaterDepth=10m
+c  sdef  erg d1 par=2 pos 0 0 -10 $ for OSGI
+ si1 L 1.3652 $ 0.66166
+ sp1 d 1
+c si1 L 1.4608
+c sp1 d 1           
+c si1 L 0.031817 0.032194 0.0364 0.27688 0.47535 0.56323 0.56932 0.6047 &
+c    0.79584 0.80193 1.0386 1.1679 $ 1.3652    $ cs 134
+c sp1 d 0.002144 0.003955 0.001439 0.000354 0.0146 0.0838 0.1543 0.976 &
+c   0.854 0.0873 0.01 0.018       $ 0.0304          $ cs 134
+si2 -5 0
+sp2 0 1 
+c si3 0 50.0 $ Radius of contaminated water R > min=7.46 cm; R =Rsphere from 76 sz card
+si3 0 15.0    $ Radius of contaminated sludge
+sp3 -21 1                                                              
+c tally specification 
+fc8  source razr=7.9%(Cs) 
+f8:e (109<100<70)
+ft8 geb 0.00280238 0.0610968 9.3364e-8 $ BDKG-11 data from Atomtex,processed December 2011
+e8 0.0005 0.03 510i 3.37299 
+c ------------------
+fc18  razr=0 
+f18:e (109<100<70)
+e18 0.005 0.03 510i 3.37299 
+c -------------------------
+fc28  source razr=7.9%(Cs) 
+ft28 geb 0.00280238 0.0610968 9.3364e-8 $
+f28:e (109<100<70)
+e28 0.595 .729 $ Cs window {0.5951, 0.7289} for Cs-134 source 
+c  material specification
+m2 1000 -0.00064 6000 -0.00014 7000 -0.75086 8000 -0.23555 & 
+     18000 -0.01281 $ air rho=0.0012 
+c m3 1000 -0.101 6000 -0.111 7000 -0.75086 8000 -0.23555 $ rubber rho=0.9
+m3 1000 -0.05692 6000 -0.542646 17000 -0.434 $ rubber rho=1.23
+m4 13000 1.0 $Al rho=2.7
+m5 12000 0.5 8000 0.5 $ MgO rho=1.6
+m6 11000 0.5 53000 0.5 $ NaI rho=3.667
+m7  8000 -0.459 11000 -0.098 14000 -0.336 20000 -0.107 $glass rho=2.4
+m8  26000 -0.17 28000 -0.81 42000 -0.02  $ permalloy
+ m9 26000 1.0 $ Fe rho=7.86
+c splav AMG-5: Fe(0.5%)Si(0.5%)Mn(0.5-0.8%)Ti(0.02-0.1%)Al(91.9-94.68%)Cu(0.1%)Be(0.0002-0.005%)Mg(4.8-5.8%)Zn(0.2%)
+c m9 26000 -0.0025 14000 -0.0025 25000 -0.0065 22000 -0.0006 13000 &
+c    -0.9329 29000 -0.0005 4000 -0.000026 12000 -0.0535 30000 -0.001   $ splav AMG-5 rho=2.65
+m10  1000 2 6000 1   $ polipropilen (CH2)n   rho=0.9 ; sotovyi rho=0.2
+m11 1000 -0.101 6000 -0.111 7000 -0.75086 8000 -0.23555 $ rubber rho=0.3
+m22 1000 2 8000 1 $ water
+c Japanise soil , atom fraction %;
+c  Si, 24.3156},  {Al, 5.0651}, {Fe, 1.04058}, {Ca, 0.310193}, {Mg, 0.609327},
+c  {K, 1.20692},  {Na, 1.07725}, {P, 0.0272329}, {S, 0.070137}, {C, 3.52573},
+c  {H, 0.384625},  {N, 0.192312}, {O, 62.175}
+m20 1000 0.384 6000 3.525 8000 62.17 13000 5.065 14000 24.31 
+      26000 1.040 20000 0.31 12000 0.6 19000 1.2  11000 1.08
+      15000 0.03 16000 0.07 7000 0.19 
+c void 
+c cutoffs  
+CUT:P 1j 0.025 0 0 
+CUT:E 1j 0.05 0 0 
+c EMAX IDES IPHOT IBAD ISTRG BNUM XNUM RNOK ENUM
+c phys:e 3.0 0 0 0 0 0 0 0 0
+c EMCPF IDES NOCOH
+c phys:p 3.0 0 0
+c mplot ta 8 
+NPS 10e6 $ 30e6
+lost 20  10 
+ctme 8640000 
+c dbcn 14j 1 $ 1 for confidence interval 
+c ptrac file=asc event=src type=p max=3000 write=pos 
+prdmp 2j -1 $20000 20000 
+print 10 40 50 128 161 170 
+     
+
