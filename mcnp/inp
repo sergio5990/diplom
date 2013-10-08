@@ -39,7 +39,7 @@ c
      
 c detector surfaces  
 c det box surfaces 
-70 pz 0 $ 
+70 pz -0.3 $ 
 71 pz 40.0 $ 
 c
 100 pz 1.55                                  $ 1.101 z141+1.55
@@ -71,7 +71,7 @@ c
 137 pz 0.75
 c soil-korpus
 140 pz 0.15                                  $  z141+0.15(0.18)
-141 pz 0.00001                               $  zero level of device
+141 pz -0.30001                               $  zero level of device
 241 pz 0.0                                   $  z141-eps
 c 142 pz 0 $ -2.1  zero level of soil
 146 pz 40.00001 $ z71+eps
@@ -83,10 +83,10 @@ c 142 pz 0 $ -2.1  zero level of soil
 c 2 shere dl9 torca korpusa
 c vnehnie
 161 sz 1.55 4.45 $ malii radiys krivizni 
-162 sz 7.3 7.3 $ bolshii radiys krivizni
+162 sz 7 7.3 $ bolshii radiys krivizni
 c vnytrennie
 163 sz 1.55 4.30 $ malii radiys krivizni
-164 sz 7.3 7.135 $ bolshii radiys krivizni 
+164 sz 7 7.135 $ bolshii radiys krivizni 
 c sludge
 1 pz -1100 $ lower plane of sludge 
 2 pz -1000 $ upper plane of sludge 

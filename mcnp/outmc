@@ -419,3 +419,201 @@
  comment. using random number generator  1, initial seed = 19073486328125      
  imcn   is done
 
+ no plot because it would have been empty.
+ no plot because it would have been empty.
+ no plot because it would have been empty.
+ no plot because it would have been empty.
+ no plot because it would have been empty.
+ no plot because it would have been empty.
+ no plot because it would have been empty.
+ mcnp     ver=5    , ld=11112005  10/08/13 13:11:33                   
+          Thread Name & Version = mcnp5VE_RSICC, 1.40
+          Copyright LANL/UC/DOE - see output file
+                                _                                      
+          ._ _    _  ._   ._   |_                                      
+          | | |  (_  | |  |_)   _)                                     
+                          |                                            
+  
+ m10  1000 2 6000 1   $ polipropilen (CH2)n   rho=0.9 ; sotovyi rho=0.
+ warning. material  10 is not used in the problem.
+ 
+ warning. zero electron importance within non-void cell   97.
+ warning. zero electron importance within non-void cell   96.
+ comment.    3 surfaces were deleted for being the same as others.
+ warning. tally   8 needs zero energy bin for negative f8 scores.
+ warning. tally  18 needs zero energy bin for negative f8 scores.
+ warning. tally  28 needs zero energy bin for negative f8 scores.
+ warning. p. and e. importances are inconsistent in    2 cells.
+ comment. using random number generator  1, initial seed = 19073486328125      
+ imcn   is done
+
+ mcnp     ver=5    , ld=11112005  10/08/13 13:13:24                   
+          Thread Name & Version = mcnp5VE_RSICC, 1.40
+          Copyright LANL/UC/DOE - see output file
+                                _                                      
+          ._ _    _  ._   ._   |_                                      
+          | | |  (_  | |  |_)   _)                                     
+                          |                                            
+  
+ m10  1000 2 6000 1   $ polipropilen (CH2)n   rho=0.9 ; sotovyi rho=0.
+ warning. material  10 is not used in the problem.
+ 
+ warning. zero electron importance within non-void cell   97.
+ warning. zero electron importance within non-void cell   96.
+ comment.    3 surfaces were deleted for being the same as others.
+ warning. tally   8 needs zero energy bin for negative f8 scores.
+ warning. tally  18 needs zero energy bin for negative f8 scores.
+ warning. tally  28 needs zero energy bin for negative f8 scores.
+ warning. p. and e. importances are inconsistent in    2 cells.
+ comment. using random number generator  1, initial seed = 19073486328125      
+ imcn   is done
+
+ mcnp     ver=5    , ld=11112005  10/08/13 13:14:09                   
+          Thread Name & Version = mcnp5VE_RSICC, 1.40
+          Copyright LANL/UC/DOE - see output file
+                                _                                      
+          ._ _    _  ._   ._   |_                                      
+          | | |  (_  | |  |_)   _)                                     
+                          |                                            
+  
+ m10  1000 2 6000 1   $ polipropilen (CH2)n   rho=0.9 ; sotovyi rho=0.
+ warning. material  10 is not used in the problem.
+ 
+ warning. zero electron importance within non-void cell   97.
+ warning. zero electron importance within non-void cell   96.
+ comment.    3 surfaces were deleted for being the same as others.
+ warning. tally   8 needs zero energy bin for negative f8 scores.
+ warning. tally  18 needs zero energy bin for negative f8 scores.
+ warning. tally  28 needs zero energy bin for negative f8 scores.
+ warning. p. and e. importances are inconsistent in    2 cells.
+ comment. using random number generator  1, initial seed = 19073486328125      
+ imcn   is done
+
+ mcnp     ver=5    , ld=11112005  10/08/13 13:14:57                   
+          Thread Name & Version = mcnp5VE_RSICC, 1.40
+          Copyright LANL/UC/DOE - see output file
+                                _                                      
+          ._ _    _  ._   ._   |_                                      
+          | | |  (_  | |  |_)   _)                                     
+                          |                                            
+  
+ m10  1000 2 6000 1   $ polipropilen (CH2)n   rho=0.9 ; sotovyi rho=0.
+ warning. material  10 is not used in the problem.
+ 
+ warning. zero electron importance within non-void cell   97.
+ warning. zero electron importance within non-void cell   96.
+ comment.    3 surfaces were deleted for being the same as others.
+ warning. tally   8 needs zero energy bin for negative f8 scores.
+ warning. tally  18 needs zero energy bin for negative f8 scores.
+ warning. tally  28 needs zero energy bin for negative f8 scores.
+ warning. p. and e. importances are inconsistent in    2 cells.
+ comment. using random number generator  1, initial seed = 19073486328125      
+ imcn   is done
+
+ mcnp     ver=5    , ld=11112005  10/08/13 13:16:56                   
+          Thread Name & Version = mcnp5VE_RSICC, 1.40
+          Copyright LANL/UC/DOE - see output file
+                                _                                      
+          ._ _    _  ._   ._   |_                                      
+          | | |  (_  | |  |_)   _)                                     
+                          |                                            
+  
+ m10  1000 2 6000 1   $ polipropilen (CH2)n   rho=0.9 ; sotovyi rho=0.
+ warning. material  10 is not used in the problem.
+ 
+ warning. zero electron importance within non-void cell   97.
+ warning. zero electron importance within non-void cell   96.
+ comment.    3 surfaces were deleted for being the same as others.
+ warning. tally   8 needs zero energy bin for negative f8 scores.
+ warning. tally  18 needs zero energy bin for negative f8 scores.
+ warning. tally  28 needs zero energy bin for negative f8 scores.
+ warning. p. and e. importances are inconsistent in    2 cells.
+ comment. using random number generator  1, initial seed = 19073486328125      
+ imcn   is done
+
+ mcnp     ver=5    , ld=11112005  10/08/13 13:19:34                   
+          Thread Name & Version = mcnp5VE_RSICC, 1.40
+          Copyright LANL/UC/DOE - see output file
+                                _                                      
+          ._ _    _  ._   ._   |_                                      
+          | | |  (_  | |  |_)   _)                                     
+                          |                                            
+  
+ m10  1000 2 6000 1   $ polipropilen (CH2)n   rho=0.9 ; sotovyi rho=0.
+ warning. material  10 is not used in the problem.
+ 
+ warning. zero electron importance within non-void cell   97.
+ warning. zero electron importance within non-void cell   96.
+ comment.    3 surfaces were deleted for being the same as others.
+ warning. tally   8 needs zero energy bin for negative f8 scores.
+ warning. tally  18 needs zero energy bin for negative f8 scores.
+ warning. tally  28 needs zero energy bin for negative f8 scores.
+ warning. p. and e. importances are inconsistent in    2 cells.
+ comment. using random number generator  1, initial seed = 19073486328125      
+ imcn   is done
+
+ no plot because it would have been empty.
+ no plot because it would have been empty.
+ mcnp     ver=5    , ld=11112005  10/08/13 13:28:12                   
+          Thread Name & Version = mcnp5VE_RSICC, 1.40
+          Copyright LANL/UC/DOE - see output file
+                                _                                      
+          ._ _    _  ._   ._   |_                                      
+          | | |  (_  | |  |_)   _)                                     
+                          |                                            
+  
+ m10  1000 2 6000 1   $ polipropilen (CH2)n   rho=0.9 ; sotovyi rho=0.
+ warning. material  10 is not used in the problem.
+ 
+ warning. zero electron importance within non-void cell   97.
+ warning. zero electron importance within non-void cell   96.
+ comment.    3 surfaces were deleted for being the same as others.
+ warning. tally   8 needs zero energy bin for negative f8 scores.
+ warning. tally  18 needs zero energy bin for negative f8 scores.
+ warning. tally  28 needs zero energy bin for negative f8 scores.
+ warning. p. and e. importances are inconsistent in    2 cells.
+ comment. using random number generator  1, initial seed = 19073486328125      
+ imcn   is done
+
+ mcnp     ver=5    , ld=11112005  10/08/13 13:30:40                   
+          Thread Name & Version = mcnp5VE_RSICC, 1.40
+          Copyright LANL/UC/DOE - see output file
+                                _                                      
+          ._ _    _  ._   ._   |_                                      
+          | | |  (_  | |  |_)   _)                                     
+                          |                                            
+  
+ m10  1000 2 6000 1   $ polipropilen (CH2)n   rho=0.9 ; sotovyi rho=0.
+ warning. material  10 is not used in the problem.
+ 
+ warning. zero electron importance within non-void cell   97.
+ warning. zero electron importance within non-void cell   96.
+ comment.    3 surfaces were deleted for being the same as others.
+ warning. tally   8 needs zero energy bin for negative f8 scores.
+ warning. tally  18 needs zero energy bin for negative f8 scores.
+ warning. tally  28 needs zero energy bin for negative f8 scores.
+ warning. p. and e. importances are inconsistent in    2 cells.
+ comment. using random number generator  1, initial seed = 19073486328125      
+ imcn   is done
+
+ mcnp     ver=5    , ld=11112005  10/08/13 13:33:13                   
+          Thread Name & Version = mcnp5VE_RSICC, 1.40
+          Copyright LANL/UC/DOE - see output file
+                                _                                      
+          ._ _    _  ._   ._   |_                                      
+          | | |  (_  | |  |_)   _)                                     
+                          |                                            
+  
+ m10  1000 2 6000 1   $ polipropilen (CH2)n   rho=0.9 ; sotovyi rho=0.
+ warning. material  10 is not used in the problem.
+ 
+ warning. zero electron importance within non-void cell   97.
+ warning. zero electron importance within non-void cell   96.
+ comment.    2 surfaces were deleted for being the same as others.
+ warning. tally   8 needs zero energy bin for negative f8 scores.
+ warning. tally  18 needs zero energy bin for negative f8 scores.
+ warning. tally  28 needs zero energy bin for negative f8 scores.
+ warning. p. and e. importances are inconsistent in    2 cells.
+ comment. using random number generator  1, initial seed = 19073486328125      
+ imcn   is done
+
