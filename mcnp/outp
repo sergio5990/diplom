@@ -2,7 +2,7 @@
     2-       c detector cells                                                                
     3-       70 2 -0.0012 141 -71 -152  imp:p=1 imp:e=1 fill=1 trcl=1                        
     4-       c 70 2 -0.0012 (70 -145 -72):(145 -71 -155)  imp:p=1 imp:e=1 fill=1             
-    5-       71 2 -0.0012 #100 #120 #121 #122 #123 #124 #125 u=1 imp:p=1 imp:e=1             
+    5-       71 2 -0.0012 #100 #120 #121 #122 #123 #124 #125 #166 u=1 imp:p=1 imp:e=1        
     6-       100 2 -0.0012 100 -128 -111 u=1 imp:p=1 imp:e=1 fill=6 $                        
     7-       101 2 -0.0012  #102 #103 #104 #105 #106 #107 &                                  
     8-                      #108 #109 #110 #111 #112 u=6  imp:p=1 imp:e=1                    
@@ -27,151 +27,152 @@
    27-       c                                                                               
    28-       121 9 -7.86 (100 -147 151 -155):(147 -111 156 -155):&                           
    29-           (111 -146 -155) u=1 imp:p=1 imp:e=1                              $ 2.65 AMG-
-   30-       122 9 -7.86 (-162 164 -163):(163 -161 -100 -162) u=1 imp:p=1 imp:e=1            
+   30-       122 9 -7.86 (-162 164 -163 -100) u=1 imp:p=1 imp:e=1                        $ 2.
    31-       c                                                                               
-   32-       c 97 22 -1.0  -76 #70 imp:p=1 imp:e=0  $ water 22 -1.0  for det in water only   
-   33-       97 22 -1.0  2 -162 -3 #70 imp:p=1 imp:e=0  $ water layer over sludge            
-   34-       96 20 -1.3  1 -2 -3  imp:p=1 imp:e=0  $  sludge                                 
-   35-       99 0 77  imp:p=0 imp:e=0 $ vac out                                              
-   36-       98 2 -0.0012 -77 #96 #97 #70 imp:p=1 imp:e=1 $ vac in                           
-   37-       c                                                                               
-   38-                                                                                       
-   39-       c detector surfaces                                                             
-   40-       c det box surfaces                                                              
-   41-       70 pz 0 $                                                                       
-   42-       71 pz 40.0 $                                                                    
-   43-       c                                                                               
-   44-       100 pz 1.55                                  $ 1.101 z141+1.55                  
-   45-       101 pz 1.7  $ z100+0.15 cmAl                                                    
-   46-       102 pz 2.0 $ z101+0.3                                                           
-   47-       103 pz 2.15 $ z102+0.15                                                         
-   48-       104 pz 2.65 $ z103+0.5                                                          
-   49-       105 pz 8.95 $ z104+Hcrystall(63)                                                
-   50-       106 pz 9.25 $ z105+0.3 orgglass                                                 
-   51-       107 pz 9.45 $ z106+0.2 PMT glass                                                
-   52-        108 pz 39.42 $ z109-0.2                                                        
-   53-        109 pz 39.62 $ z110-0.02                                                       
-   54-        110 pz 39.64  $ z111-0.16                                                      
-   55-        111 pz 39.8 $ z71-0.2 BGKG length                                              
-   56-       112 cz 3.15 $ R_det                                                             
-   57-       113 cz 3.45 $ R_MgO=R_det+3mmMg0                                                
-   58-       114 cz 3.395 $ R_in_PMT_glass                                                   
-   59-       115 cz 3.595 $ R_det_korpus=R_MgO+1.45mmAl                                      
-   60-       116 cz 3.615 $ R_out_permalloy=R115+0.2mmPermalloy                              
-   61-       117 cz 2.0 $ R_in_rezina                                                        
-   62-       118 pz 5.35 $ begin of permalloy                                                
-   63-       128 cz 3.775 $ R_out                                                            
-   64-       129 cz 3.775 $ R_out                                                            
-   65-       130 pz 1.0999                                                                   
-   66-       131 pz 39.9601 $ 22.3601                                                        
-   67-       132 cz 3.7751 $ R128+eps                                                        
-   68-       135 cz 0.6 $ air hole in bottom                                                 
-   69-       136 cz 2.0 $  2-nd air hole in bottom                                           
-   70-       137 pz 0.75                                                                     
-   71-       c soil-korpus                                                                   
-   72-       140 pz 0.15                                  $  z141+0.15(0.18)                 
-   73-       141 pz 0.00001                               $  zero level of device            
-   74-       241 pz 0.0                                   $  z141-eps                        
-   75-       c 142 pz 0 $ -2.1  zero level of soil                                           
-   76-       146 pz 40.00001 $ z71+eps                                                       
-   77-       147 pz 10.5 $  y141+10.5                                                        
-   78-       151 cz 4.30 $ R152-0.15                                                         
-   79-       152 cz 4.45 $  outer radius of AMZ-shell                                        
-   80-       155 cz 4.44999 $ 4.54999 $ 4.5 $ R152-eps                                       
-   81-       156 cz 4.25 $ $ R152-0.2                                                        
-   82-       c 2 shere dl9 torca korpusa                                                     
-   83-       c vnehnie                                                                       
-   84-       161 sz 1.55 4.45 $ malii radiys krivizni                                        
-   85-       162 sz 7.3 7.3 $ bolshii radiys krivizni                                        
-   86-       c vnytrennie                                                                    
-   87-       163 sz 1.55 4.30 $ malii radiys krivizni                                        
-   88-       164 sz 7.3 7.135 $ bolshii radiys krivizni                                      
-   89-       c sludge                                                                        
-   90-       1 pz -1100 $ lower plane of sludge                                              
-   91-       2 pz -1000 $ upper plane of sludge                                              
-   92-       3 cz 1500 $ radius of sludge (water)                                            
-   93-       c vacuum sphere                                                                 
-   94-       76 sz 5.35 50.0 $ water sphere in det center is changed each time               
-   95-       77 so 3000.0                                                                    
-   96-                                                                                       
-   97-       c source specification                                                          
-   98-       c detector translation and orientation                                          
-   99-       *tr1 0 -5.35 -995.5  0 90 90 90 90 180 90 0 90                                  
-  100-       MODE P E                                                                        
-  101-       c point source                                                                  
-  102-       c sdef  erg d1 sur=77 nrm=-1 $ vacuum source                                    
-  103-       c sdef  erg d1 cel=97 par=2 pos 0 0 5.35  rad d3 $ pos in center of NaI         
-  104-        sdef  erg d1 par=2 pos 0 0 -1000 axs 0 0 1 ext d2 rad d3 $ det na boku in sludg
-  105-       c  sdef  erg d1 par=2 pos 0 0 -10 $ for OSGI                                    
-  106-        si1 L 1.3652 $ 0.66166                                                         
-  107-        sp1 d 1                                                                        
-  108-       c si1 L 1.4608                                                                  
-  109-       c sp1 d 1                                                                       
-  110-       c si1 L 0.031817 0.032194 0.0364 0.27688 0.47535 0.56323 0.56932 0.6047 &       
-  111-       c    0.79584 0.80193 1.0386 1.1679 $ 1.3652    $ cs 134                         
-  112-       c sp1 d 0.002144 0.003955 0.001439 0.000354 0.0146 0.0838 0.1543 0.976 &        
-  113-       c   0.854 0.0873 0.01 0.018       $ 0.0304          $ cs 134                    
-  114-       si2 -5 0                                                                        
-  115-       sp2 0 1                                                                         
-  116-       c si3 0 50.0 $ Radius of contaminated water R > min=7.46 cm; R =Rsphere from 76 
-  117-       si3 0 15.0    $ Radius of contaminated sludge                                   
-  118-       sp3 -21 1                                                                       
-  119-       c tally specification                                                           
-  120-       fc8  source razr=7.9%(Cs)                                                       
-  121-       f8:e (109<100<70)                                                               
-  122-       ft8 geb 0.00280238 0.0610968 9.3364e-8 $ BDKG-11 data from Atomtex,processed Dec
-  123-       e8 0.0005 0.03 510i 3.37299                                                     
-  124-       c ------------------                                                            
-  125-       fc18  razr=0                                                                    
-  126-       f18:e (109<100<70)                                                              
-  127-       e18 0.005 0.03 510i 3.37299                                                     
-  128-       c -------------------------                                                     
-  129-       fc28  source razr=7.9%(Cs)                                                      
-  130-       ft28 geb 0.00280238 0.0610968 9.3364e-8 $                                       
-  131-       f28:e (109<100<70)                                                              
-  132-       e28 0.595 .729 $ Cs window {0.5951, 0.7289} for Cs-134 source                   
-  133-       c  material specification                                                       
-  134-       m2 1000 -0.00064 6000 -0.00014 7000 -0.75086 8000 -0.23555 &                    
-  135-            18000 -0.01281 $ air rho=0.0012                                            
-  136-       c m3 1000 -0.101 6000 -0.111 7000 -0.75086 8000 -0.23555 $ rubber rho=0.9       
-  137-       m3 1000 -0.05692 6000 -0.542646 17000 -0.434 $ rubber rho=1.23                  
-  138-       m4 13000 1.0 $Al rho=2.7                                                        
-  139-       m5 12000 0.5 8000 0.5 $ MgO rho=1.6                                             
-  140-       m6 11000 0.5 53000 0.5 $ NaI rho=3.667                                          
-  141-       m7  8000 -0.459 11000 -0.098 14000 -0.336 20000 -0.107 $glass rho=2.4           
-  142-       m8  26000 -0.17 28000 -0.81 42000 -0.02  $ permalloy                            
-  143-        m9 26000 1.0 $ Fe rho=7.86                                                     
-  144-       c splav AMG-5: Fe(0.5%)Si(0.5%)Mn(0.5-0.8%)Ti(0.02-0.1%)Al(91.9-94.68%)Cu(0.1%)B
-  145-       c m9 26000 -0.0025 14000 -0.0025 25000 -0.0065 22000 -0.0006 13000 &            
-  146-       c    -0.9329 29000 -0.0005 4000 -0.000026 12000 -0.0535 30000 -0.001   $ splav A
-  147-       m10  1000 2 6000 1   $ polipropilen (CH2)n   rho=0.9 ; sotovyi rho=0.2          
+   32-       166 9 -7.86 (-162 -100 163 -161) u=1 imp:p=1 imp:e=1                            
+   33-       c 97 22 -1.0  -76 #70 imp:p=1 imp:e=0  $ water 22 -1.0  for det in water only   
+   34-       97 22 -1.0  2 -162 -3 #70 imp:p=1 imp:e=0  $ water layer over sludge            
+   35-       96 20 -1.3  1 -2 -3  imp:p=1 imp:e=0  $  sludge                                 
+   36-       99 0 77  imp:p=0 imp:e=0 $ vac out                                              
+   37-       98 2 -0.0012 -77 #96 #97 #70 imp:p=1 imp:e=1 $ vac in                           
+   38-       c                                                                               
+   39-                                                                                       
+   40-       c detector surfaces                                                             
+   41-       c det box surfaces                                                              
+   42-       70 pz 0 $                                                                       
+   43-       71 pz 40.0 $                                                                    
+   44-       c                                                                               
+   45-       100 pz 1.55                                  $ 1.101 z141+1.55                  
+   46-       101 pz 1.7  $ z100+0.15 cmAl                                                    
+   47-       102 pz 2.0 $ z101+0.3                                                           
+   48-       103 pz 2.15 $ z102+0.15                                                         
+   49-       104 pz 2.65 $ z103+0.5                                                          
+   50-       105 pz 8.95 $ z104+Hcrystall(63)                                                
+   51-       106 pz 9.25 $ z105+0.3 orgglass                                                 
+   52-       107 pz 9.45 $ z106+0.2 PMT glass                                                
+   53-        108 pz 39.42 $ z109-0.2                                                        
+   54-        109 pz 39.62 $ z110-0.02                                                       
+   55-        110 pz 39.64  $ z111-0.16                                                      
+   56-        111 pz 39.8 $ z71-0.2 BGKG length                                              
+   57-       112 cz 3.15 $ R_det                                                             
+   58-       113 cz 3.45 $ R_MgO=R_det+3mmMg0                                                
+   59-       114 cz 3.395 $ R_in_PMT_glass                                                   
+   60-       115 cz 3.595 $ R_det_korpus=R_MgO+1.45mmAl                                      
+   61-       116 cz 3.615 $ R_out_permalloy=R115+0.2mmPermalloy                              
+   62-       117 cz 2.0 $ R_in_rezina                                                        
+   63-       118 pz 5.35 $ begin of permalloy                                                
+   64-       128 cz 3.775 $ R_out                                                            
+   65-       129 cz 3.775 $ R_out                                                            
+   66-       130 pz 1.0999                                                                   
+   67-       131 pz 39.9601 $ 22.3601                                                        
+   68-       132 cz 3.7751 $ R128+eps                                                        
+   69-       135 cz 0.6 $ air hole in bottom                                                 
+   70-       136 cz 2.0 $  2-nd air hole in bottom                                           
+   71-       137 pz 0.75                                                                     
+   72-       c soil-korpus                                                                   
+   73-       140 pz 0.15                                  $  z141+0.15(0.18)                 
+   74-       141 pz 0.00001                               $  zero level of device            
+   75-       241 pz 0.0                                   $  z141-eps                        
+   76-       c 142 pz 0 $ -2.1  zero level of soil                                           
+   77-       146 pz 40.00001 $ z71+eps                                                       
+   78-       147 pz 10.5 $  y141+10.5                                                        
+   79-       151 cz 4.30 $ R152-0.15                                                         
+   80-       152 cz 4.45 $  outer radius of AMZ-shell                                        
+   81-       155 cz 4.44999 $ 4.54999 $ 4.5 $ R152-eps                                       
+   82-       156 cz 4.25 $ $ R152-0.2                                                        
+   83-       c 2 shere dl9 torca korpusa                                                     
+   84-       c vnehnie                                                                       
+   85-       161 sz 1.55 4.45 $ malii radiys krivizni                                        
+   86-       162 sz 7.3 7.3 $ bolshii radiys krivizni                                        
+   87-       c vnytrennie                                                                    
+   88-       163 sz 1.55 4.30 $ malii radiys krivizni                                        
+   89-       164 sz 7.3 7.135 $ bolshii radiys krivizni                                      
+   90-       c sludge                                                                        
+   91-       1 pz -1100 $ lower plane of sludge                                              
+   92-       2 pz -1000 $ upper plane of sludge                                              
+   93-       3 cz 1500 $ radius of sludge (water)                                            
+   94-       c vacuum sphere                                                                 
+   95-       76 sz 5.35 50.0 $ water sphere in det center is changed each time               
+   96-       77 so 3000.0                                                                    
+   97-                                                                                       
+   98-       c source specification                                                          
+   99-       c detector translation and orientation                                          
+  100-       *tr1 0 -5.35 -995.5  0 90 90 90 90 180 90 0 90                                  
+  101-       MODE P E                                                                        
+  102-       c point source                                                                  
+  103-       c sdef  erg d1 sur=77 nrm=-1 $ vacuum source                                    
+  104-       c sdef  erg d1 cel=97 par=2 pos 0 0 5.35  rad d3 $ pos in center of NaI         
+  105-        sdef  erg d1 par=2 pos 0 0 -1000 axs 0 0 1 ext d2 rad d3 $ det na boku in sludg
+  106-       c  sdef  erg d1 par=2 pos 0 0 -10 $ for OSGI                                    
+  107-        si1 L 1.3652 $ 0.66166                                                         
+  108-        sp1 d 1                                                                        
+  109-       c si1 L 1.4608                                                                  
+  110-       c sp1 d 1                                                                       
+  111-       c si1 L 0.031817 0.032194 0.0364 0.27688 0.47535 0.56323 0.56932 0.6047 &       
+  112-       c    0.79584 0.80193 1.0386 1.1679 $ 1.3652    $ cs 134                         
+  113-       c sp1 d 0.002144 0.003955 0.001439 0.000354 0.0146 0.0838 0.1543 0.976 &        
+  114-       c   0.854 0.0873 0.01 0.018       $ 0.0304          $ cs 134                    
+  115-       si2 -5 0                                                                        
+  116-       sp2 0 1                                                                         
+  117-       c si3 0 50.0 $ Radius of contaminated water R > min=7.46 cm; R =Rsphere from 76 
+  118-       si3 0 15.0    $ Radius of contaminated sludge                                   
+  119-       sp3 -21 1                                                                       
+  120-       c tally specification                                                           
+  121-       fc8  source razr=7.9%(Cs)                                                       
+  122-       f8:e (109<100<70)                                                               
+  123-       ft8 geb 0.00280238 0.0610968 9.3364e-8 $ BDKG-11 data from Atomtex,processed Dec
+  124-       e8 0.0005 0.03 510i 3.37299                                                     
+  125-       c ------------------                                                            
+  126-       fc18  razr=0                                                                    
+  127-       f18:e (109<100<70)                                                              
+  128-       e18 0.005 0.03 510i 3.37299                                                     
+  129-       c -------------------------                                                     
+  130-       fc28  source razr=7.9%(Cs)                                                      
+  131-       ft28 geb 0.00280238 0.0610968 9.3364e-8 $                                       
+  132-       f28:e (109<100<70)                                                              
+  133-       e28 0.595 .729 $ Cs window {0.5951, 0.7289} for Cs-134 source                   
+  134-       c  material specification                                                       
+  135-       m2 1000 -0.00064 6000 -0.00014 7000 -0.75086 8000 -0.23555 &                    
+  136-            18000 -0.01281 $ air rho=0.0012                                            
+  137-       c m3 1000 -0.101 6000 -0.111 7000 -0.75086 8000 -0.23555 $ rubber rho=0.9       
+  138-       m3 1000 -0.05692 6000 -0.542646 17000 -0.434 $ rubber rho=1.23                  
+  139-       m4 13000 1.0 $Al rho=2.7                                                        
+  140-       m5 12000 0.5 8000 0.5 $ MgO rho=1.6                                             
+  141-       m6 11000 0.5 53000 0.5 $ NaI rho=3.667                                          
+  142-       m7  8000 -0.459 11000 -0.098 14000 -0.336 20000 -0.107 $glass rho=2.4           
+  143-       m8  26000 -0.17 28000 -0.81 42000 -0.02  $ permalloy                            
+  144-        m9 26000 1.0 $ Fe rho=7.86                                                     
+  145-       c splav AMG-5: Fe(0.5%)Si(0.5%)Mn(0.5-0.8%)Ti(0.02-0.1%)Al(91.9-94.68%)Cu(0.1%)B
+  146-       c m9 26000 -0.0025 14000 -0.0025 25000 -0.0065 22000 -0.0006 13000 &            
+  147-       c    -0.9329 29000 -0.0005 4000 -0.000026 12000 -0.0535 30000 -0.001   $ splav A
+  148-       m10  1000 2 6000 1   $ polipropilen (CH2)n   rho=0.9 ; sotovyi rho=0.2          
  warning. material  10 is not used in the problem.
-  148-       m11 1000 -0.101 6000 -0.111 7000 -0.75086 8000 -0.23555 $ rubber rho=0.3        
-  149-       m22 1000 2 8000 1 $ water                                                       
-  150-       c Japanise soil , atom fraction %;                                              
-  151-       c  Si, 24.3156},  {Al, 5.0651}, {Fe, 1.04058}, {Ca, 0.310193}, {Mg, 0.609327},  
-  152-       c  {K, 1.20692},  {Na, 1.07725}, {P, 0.0272329}, {S, 0.070137}, {C, 3.52573},   
-  153-       c  {H, 0.384625},  {N, 0.192312}, {O, 62.175}                                   
-  154-       m20 1000 0.384 6000 3.525 8000 62.17 13000 5.065 14000 24.31                    
-  155-             26000 1.040 20000 0.31 12000 0.6 19000 1.2  11000 1.08                    
-  156-             15000 0.03 16000 0.07 7000 0.19                                           
-  157-       c void                                                                          
-  158-       c cutoffs                                                                       
-  159-       CUT:P 1j 0.025 0 0                                                              
-  160-       CUT:E 1j 0.05 0 0                                                               
-  161-       c EMAX IDES IPHOT IBAD ISTRG BNUM XNUM RNOK ENUM                                
-  162-       c phys:e 3.0 0 0 0 0 0 0 0 0                                                    
-  163-       c EMCPF IDES NOCOH                                                              
-  164-       c phys:p 3.0 0 0                                                                
-  165-       c mplot ta 8                                                                    
-  166-       NPS 10e6 $ 30e6                                                                 
-  167-       lost 20  10                                                                     
-  168-       ctme 8640000                                                                    
-  169-       c dbcn 14j 1 $ 1 for confidence interval                                        
-  170-       c ptrac file=asc event=src type=p max=3000 write=pos                            
-  171-       prdmp 2j -1 $20000 20000                                                        
-  172-       print 10 40 50 128 161 170                                                      
-  173-                                                                                       
+  149-       m11 1000 -0.101 6000 -0.111 7000 -0.75086 8000 -0.23555 $ rubber rho=0.3        
+  150-       m22 1000 2 8000 1 $ water                                                       
+  151-       c Japanise soil , atom fraction %;                                              
+  152-       c  Si, 24.3156},  {Al, 5.0651}, {Fe, 1.04058}, {Ca, 0.310193}, {Mg, 0.609327},  
+  153-       c  {K, 1.20692},  {Na, 1.07725}, {P, 0.0272329}, {S, 0.070137}, {C, 3.52573},   
+  154-       c  {H, 0.384625},  {N, 0.192312}, {O, 62.175}                                   
+  155-       m20 1000 0.384 6000 3.525 8000 62.17 13000 5.065 14000 24.31                    
+  156-             26000 1.040 20000 0.31 12000 0.6 19000 1.2  11000 1.08                    
+  157-             15000 0.03 16000 0.07 7000 0.19                                           
+  158-       c void                                                                          
+  159-       c cutoffs                                                                       
+  160-       CUT:P 1j 0.025 0 0                                                              
+  161-       CUT:E 1j 0.05 0 0                                                               
+  162-       c EMAX IDES IPHOT IBAD ISTRG BNUM XNUM RNOK ENUM                                
+  163-       c phys:e 3.0 0 0 0 0 0 0 0 0                                                    
+  164-       c EMCPF IDES NOCOH                                                              
+  165-       c phys:p 3.0 0 0                                                                
+  166-       c mplot ta 8                                                                    
+  167-       NPS 10e6 $ 30e6                                                                 
+  168-       lost 20  10                                                                     
+  169-       ctme 8640000                                                                    
+  170-       c dbcn 14j 1 $ 1 for confidence interval                                        
+  171-       c ptrac file=asc event=src type=p max=3000 write=pos                            
+  172-       prdmp 2j -1 $20000 20000                                                        
+  173-       print 10 40 50 128 161 170                                                      
+  174-                                                                                       
  
  warning. zero electron importance within non-void cell   97.
  
@@ -277,11 +278,12 @@
     18   124 -1.20000E-03   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00      0                      
     19   125 -3.00000E-01   0.00000E+00   0.00000E+00   3.18492E+01   0.00000E+00      1                      
     20   121 -7.86000E+00   0.00000E+00   0.00000E+00   2.09501E+02   0.00000E+00      1                      
-    21   122 -7.86000E+00   0.00000E+00   0.00000E+00   1.10150E+01   0.00000E+00      1                      
-    22    97 -1.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00      0      asymmetric      
-    23    96 -1.30000E+00   0.00000E+00   0.00000E+00   7.06858E+08   0.00000E+00      1                      
-    24    99  0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00      0      infinite        
-    25    98 -1.20000E-03   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00      0      asymmetric      
+    21   122 -7.86000E+00   0.00000E+00   0.00000E+00   1.05707E+01   0.00000E+00      1                      
+    22   166 -7.86000E+00   0.00000E+00   0.00000E+00   3.87684E-01   0.00000E+00      1                      
+    23    97 -1.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00      0      asymmetric      
+    24    96 -1.30000E+00   0.00000E+00   0.00000E+00   7.06858E+08   0.00000E+00      1                      
+    25    99  0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00      0      infinite        
+    26    98 -1.20000E-03   0.00000E+00   0.00000E+00   0.00000E+00   0.00000E+00      0      asymmetric      
 1surface areas                                                                                          print table 50
 
          surface    input      calculated    reason area
@@ -289,7 +291,7 @@
 
      1       70  0.00000E+00   0.00000E+00   not a boundary  
      2       71  0.00000E+00   0.00000E+00   not a boundary  
-     3      100  0.00000E+00   6.11994E+01                   
+     3      100  0.00000E+00   6.22114E+01                   
      4      101  0.00000E+00   4.10550E+01                   
      5      102  0.00000E+00   4.10550E+01                   
      6      103  0.00000E+00   3.73928E+01                   
@@ -324,8 +326,8 @@
     38      156  0.00000E+00   7.82414E+02                   
     39      161  0.00000E+00   1.03331E+00                   
     40      162  0.00000E+00   0.00000E+00   asymmetric      
-    41      163  0.00000E+00   1.51364E+00                   
-    42      164  0.00000E+00   6.33461E+01                   
+    41      163  0.00000E+00   4.08202E+00                   
+    42      164  0.00000E+00   6.20903E+01                   
     43        1  0.00000E+00   7.06858E+06                   
     44        2  0.00000E+00   0.00000E+00   asymmetric      
     45        3  0.00000E+00   0.00000E+00   asymmetric      
@@ -361,11 +363,12 @@
     18   124    2 -1.20000E-03 0.00000E+00 0.00000E+00 0.00000E+00     0  1.0000E+00 1.0000E+00                        
     19   125   11 -3.00000E-01 0.00000E+00 3.18492E+01 0.00000E+00     1  1.0000E+00 1.0000E+00                        
     20   121    9 -7.86000E+00 0.00000E+00 2.09501E+02 0.00000E+00     1  1.0000E+00 1.0000E+00                        
-    21   122    9 -7.86000E+00 0.00000E+00 1.10150E+01 0.00000E+00     1  1.0000E+00 1.0000E+00                        
-    22    97   22 -1.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00     0  1.0000E+00 0.0000E+00                        
-    23    96   20 -1.30000E+00 0.00000E+00 7.06858E+08 0.00000E+00     1  1.0000E+00 0.0000E+00                        
-    24    99    0  0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00     0  0.0000E+00 0.0000E+00                        
-    25    98    2 -1.20000E-03 0.00000E+00 0.00000E+00 0.00000E+00     0  1.0000E+00 1.0000E+00                        
+    21   122    9 -7.86000E+00 0.00000E+00 1.05707E+01 0.00000E+00     1  1.0000E+00 1.0000E+00                        
+    22   166    9 -7.86000E+00 0.00000E+00 3.87684E-01 0.00000E+00     1  1.0000E+00 1.0000E+00                        
+    23    97   22 -1.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00     0  1.0000E+00 0.0000E+00                        
+    24    96   20 -1.30000E+00 0.00000E+00 7.06858E+08 0.00000E+00     1  1.0000E+00 0.0000E+00                        
+    25    99    0  0.00000E+00 0.00000E+00 0.00000E+00 0.00000E+00     0  0.0000E+00 0.0000E+00                        
+    26    98    2 -1.20000E-03 0.00000E+00 0.00000E+00 0.00000E+00     0  1.0000E+00 1.0000E+00                        
 
  total                                     7.06865E+08 0.00000E+00
 
