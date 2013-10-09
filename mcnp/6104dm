@@ -2,10 +2,10 @@ c BGKG-11_water razr 7.9%(Cs137) source=water
 c detector cells  
 70 2 -0.0012 141 -71 -152  imp:p=1 imp:e=1 fill=1 trcl=1
 c 70 2 -0.0012 (70 -145 -72):(145 -71 -155)  imp:p=1 imp:e=1 fill=1 
-71 2 -0.0012 #100 #120 #121 #122 #123 #124 #125 #166 u=1 imp:p=1 imp:e=1 
+71 2 -0.0012 #122 #100 #120 #121  #123 #124 #125 #166 u=1 imp:p=1 imp:e=1 
 100 2 -0.0012 100 -128 -111 u=1 imp:p=1 imp:e=1 fill=6 $ 
 101 2 -0.0012  #102 #103 #104 #105 #106 #107 & 
-               #108 #109 #110 #111 #112 u=6  imp:p=1 imp:e=1 
+               #108 #109 #110 #111 #112 #160 #167 u=6  imp:p=1 imp:e=1 
 102 4 -2.78 (130 -132 -101):(101 -132 116 -110):(110 -132 -131) &
         u=6  imp:p=1 imp:e=1 $ Al outer layer
 103 3 -0.8 101 -102 117 -116 imp:p=1 imp:e=1 u=6 $ rubber 
@@ -13,7 +13,8 @@ c 70 2 -0.0012 (70 -145 -72):(145 -71 -155)  imp:p=1 imp:e=1 fill=1
 105 2 -0.0012 102 -118 115 -116 imp:p=1 imp:e=1 u=6 $ air in side
 106 4 -2.78 (102 -103 -115):(103 -105 113 -115) u=6 imp:p=1 imp:e=1 $ det Al layer
 107 5 -1.6 (103 -104 -113):(104 -105 112 -113) imp:p=1 imp:e=1 u=6 $ Mg0
-108 8 -8.6 (118 -109 115 -116):(109 -110 -116) imp:p=1 imp:e=1 u=6 $ permalloy
+108 2 -0.0012 (165 -109 115 -116):(109 -110 -116) imp:p=1 imp:e=1 u=6 $ vozdyh
+160 8 -8.6 (118 -165 115 -116) imp:p=1 imp:e=1 u=6 $ permoloi
 109 6 -3.667 104 -105 -112 imp:p=1 imp:e=1 u=6 $ NaI
 110 7 -2.4 105 -106 -115 imp:p=1 imp:e=1 u=6 $ det_glass
 111 7 -2.4 (106 -107 -115):(107 -108 114 -115):(108 -109 -115) &
@@ -29,7 +30,8 @@ c
     (111 -146 -155) u=1 imp:p=1 imp:e=1                              $ 2.65 AMG-5 shell side Fe 7.86
 122 9 -7.86 (-162 164 -163 -100) u=1 imp:p=1 imp:e=1                        $ 2.65 AMG-5 shell bottom Fe 7.86
 c
-166 9 -7.86 (-162 -100 163 -161) u=1 imp:p=1 imp:e=1 
+166 9 -7.86 (-162 -100 163 -161) u=1 imp:p=1 imp:e=1
+167 9 -7.86 (166 -167 131 -111) u=6 imp:p=1 imp:e=1
 c 97 22 -1.0  -76 #70 imp:p=1 imp:e=0  $ water 22 -1.0  for det in water only
 97 22 -1.0  2 -162 -3 #70 imp:p=1 imp:e=0  $ water layer over sludge
 96 20 -1.3  1 -2 -3  imp:p=1 imp:e=0  $  sludge
@@ -40,7 +42,7 @@ c
 c detector surfaces  
 c det box surfaces 
 70 pz -0.3 $ 
-71 pz 40.0 $ 
+71 pz 47.1 $ 
 c
 100 pz 1.55                                  $ 1.101 z141+1.55
 101 pz 1.7  $ z100+0.15 cmAl
@@ -50,21 +52,21 @@ c
 105 pz 8.95 $ z104+Hcrystall(63)
 106 pz 9.25 $ z105+0.3 orgglass
 107 pz 9.45 $ z106+0.2 PMT glass
- 108 pz 39.42 $ z109-0.2
- 109 pz 39.62 $ z110-0.02 
- 110 pz 39.64  $ z111-0.16 
- 111 pz 39.8 $ z71-0.2 BGKG length
+ 108 pz 19.76 $ z109-0.2
+ 109 pz 19.96 $ z110-0.02 
+ 110 pz 19.98 $ 
+ 111 pz 46.0 $ 
 112 cz 3.15 $ R_det
 113 cz 3.45 $ R_MgO=R_det+3mmMg0
 114 cz 3.395 $ R_in_PMT_glass
-115 cz 3.595 $ R_det_korpus=R_MgO+1.45mmAl
+115 cz 3.585 $ R_det_korpus=R_MgO+1.45mmAl
 116 cz 3.615 $ R_out_permalloy=R115+0.2mmPermalloy
 117 cz 2.0 $ R_in_rezina
-118 pz 5.35 $ begin of permalloy
+118 pz 2.8 $ begin of permalloy
 128 cz 3.775 $ R_out
 129 cz 3.775 $ R_out
 130 pz 1.0999
-131 pz 39.9601 $ 22.3601
+131 pz 20.3 $ 
 132 cz 3.7751 $ R128+eps
 135 cz 0.6 $ air hole in bottom
 136 cz 2.0 $  2-nd air hole in bottom
@@ -74,19 +76,25 @@ c soil-korpus
 141 pz -0.30001                               $  zero level of device
 241 pz 0.0                                   $  z141-eps
 c 142 pz 0 $ -2.1  zero level of soil
-146 pz 40.00001 $ z71+eps
+146 pz 47.10001 $ z71+eps
 147 pz 10.5 $  y141+10.5
 151 cz 4.30 $ R152-0.15 
 152 cz 4.45 $  outer radius of AMZ-shell  
 155 cz 4.44999 $ 4.54999 $ 4.5 $ R152-eps
-156 cz 4.25 $ $ R152-0.2 
+156 cz 4.215 $ $ R152-0.235 
 c 2 shere dl9 torca korpusa
 c vnehnie
 161 sz 1.55 4.45 $ malii radiys krivizni 
 162 sz 7 7.3 $ bolshii radiys krivizni
 c vnytrennie
 163 sz 1.55 4.30 $ malii radiys krivizni
-164 sz 7 7.135 $ bolshii radiys krivizni 
+164 sz 7 7.135 $ bolshii radiys krivizni
+c popravka permolo9
+165 pz 19.7
+c dl9 dopolnit sloy fe
+166 cz 3.475 $ 128 -0.3
+c popravka na 128
+167 cz 3.77501 
 c sludge
 1 pz -1100 $ lower plane of sludge 
 2 pz -1000 $ upper plane of sludge 
