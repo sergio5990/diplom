@@ -37,7 +37,7 @@ c 97 22 -1.0  -76 #70 imp:p=1 imp:e=0  $ water 22 -1.0  for det in water only
 
 c detector surfaces                                                             
 c det box surfaces                                                              
-   70        pz 0  $
+   70        pz -0.3  $
    71        pz 40  $
 c                                                                               
   100        pz 1.55  $ 1.101 z141+1.55
@@ -69,7 +69,7 @@ c
   137        pz 0.75 
 c soil-korpus                                                                   
   140        pz 0.15  $  z141+0.15(0.18)
-  141        pz 1e-005  $  zero level of device
+  141        pz -0.30001  $  zero level of device
   241        pz 0  $  z141-eps
 c 142 pz 0 $ -2.1  zero level of soil                                           
   146        pz 40.00001  $ z71+eps
